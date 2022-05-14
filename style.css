@@ -1,6 +1,6 @@
 /* (A) ENTIRE PAGE */
 body{
-    display: flex;justify-content: center;margin-top: 50px;background-color: #a8e3ee;
+    display: flex;justify-content: center;margin-top: 50px;
 }
 #cal-wrap * { font-family: arial, sans-serif; j}
 .ninja { display: none !important; }
