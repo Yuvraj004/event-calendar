@@ -2,7 +2,11 @@
 body{
     display: flex;justify-content: center;margin-top: 50px;
 }
+<<<<<<< HEAD
 #cal-wrap * { font-family: arial, sans-serif;}
+=======
+#cal-wrap * { font-family: arial, sans-serif; j}
+>>>>>>> 24145ec748a6c36b5f403f061f1c7af78417939b
 .ninja { display: none !important; }
 
 /* (B) CONTAINER */
