@@ -1,5 +1,8 @@
 /* (A) ENTIRE PAGE */
-#cal-wrap * { font-family: arial, sans-serif; }
+body{
+    display: flex;justify-content: center;margin-top: 50px;
+}
+#cal-wrap * { font-family: arial, sans-serif; j}
 .ninja { display: none !important; }
 
 /* (B) CONTAINER */
