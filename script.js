@@ -170,6 +170,7 @@ var cal = {
   save : () => {
     cal.data[cal.sDay] = cal.hfTxt.value;
     localStorage.setItem(`cal-${cal.sMth}-${cal.sYear}`, JSON.stringify(cal.data));
+
     cal.list();
     return false;
   },
@@ -180,5 +181,9 @@ var cal = {
     localStorage.setItem(`cal-${cal.sMth}-${cal.sYear}`, JSON.stringify(cal.data));
     cal.list();
   }}
+  //(H) SQL CONNECTION
+
+  
+  
 };
 window.addEventListener("load", cal.init);
