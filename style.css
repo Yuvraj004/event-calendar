@@ -2,9 +2,12 @@
 body{display: flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 50px;background: linear-gradient(140deg,#83e9f4 ,#fb6f6f);}
 #cal-wrap * { font-family: arial, sans-serif;}
 .ninja { display: none !important; }
+.heading{
+  font-family: 'Courier New', Courier, monospace;font-size: x-large;color: rgb(0, 110, 255);text-shadow:3px 3px #000;
+}
 
 /* (B) CONTAINER */
-#cal-wrap { max-width: 600px; }
+#cal-wrap { max-width: 600px; margin: 50px;}
 
 /* (C) PERIOD SELECTOR */
 #cal-date { display: flex;background-color: rgba(92, 217, 248, 0.437);box-shadow: 5px 5px #000;}
@@ -92,4 +95,12 @@ select{background-color: rgba(181, 238, 253, 0.437);}
   border: 0;
   background: #ea4c4c;
   color: #fff;
+}
+/*(F) Footer*/
+#footer{
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  color:whitesmoke;
+  background-color: black;
+  padding: 5px;
 }
