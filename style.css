@@ -1,23 +1,26 @@
 /* (A) ENTIRE PAGE */
-body{display: flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 50px;background: linear-gradient(140deg,#83e9f4 ,#fb6f6f);}
+body{display: flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 50px;background: linear-gradient(140deg,#83e9f4 ,#fb6f6f);
+background-image: url("cal.jpg"); background-size: 100% 100%;background-repeat: no-repeat;background-position: center;}
 #cal-wrap * { font-family: arial, sans-serif;}
 .ninja { display: none !important; }
-.heading{
-  font-family: 'Courier New', Courier, monospace;font-size: x-large;color: rgb(0, 110, 255);text-shadow:3px 3px #000;
+#heading{
+  font-family: 'Courier New', Courier, monospace;font-size: x-large;color: rgb(0, 110, 255);text-shadow:3px 3px #000;font-size: xx-large;
+  width: 100%;
+  text-align: center;
 }
 
 /* (B) CONTAINER */
-#cal-wrap { max-width: 600px; margin: 50px;}
+#cal-wrap { max-width: 600px; margin: auto;margin-bottom: 20px;}
 
 /* (C) PERIOD SELECTOR */
-#cal-date { display: flex;background-color: rgba(92, 217, 248, 0.437);box-shadow: 5px 5px #000;}
-select{background-color: rgba(181, 238, 253, 0.437);}
+#cal-date { display: flex;margin: 10px 10px;justify-content: center;}
+select{background-color: rgba(141, 230, 255, 0.876);box-shadow: 5px 5px #000;}
 #cal-mth, #cal-yr {
   box-sizing: border-box;
   padding: 10px 20px;
   font-size: 1.2em;
-  border: 0;
-  
+  border-radius: 20%;
+  margin: auto;
 }
 
 /* (D) CALENDAR */
@@ -25,6 +28,8 @@ select{background-color: rgba(181, 238, 253, 0.437);}
   width: 100%;
   border-collapse: collapse;
   box-shadow: 5px 5px #333;
+  border-radius: 20%;
+  margin: auto;
 }
 #calendar tr.head td {
   font-weight: bold;
@@ -33,13 +38,16 @@ select{background-color: rgba(181, 238, 253, 0.437);}
   background: #f37070;
   padding: 15px;
   text-align: center;
+  border-radius: 20%;
+  margin: auto;
 }
 #calendar tr.day td {
-  border: 1px solid rgb(0, 0, 0);
-  width: 14.28%;
+  width: 20%;
   padding: 15px 5px;
   vertical-align: top;
-  background-color: rgb(101, 241, 230);
+  background-color: yellow;
+  border-radius: 10%;
+  margin: auto;
 }
 #calendar tr.day td:hover {
   background: #fff9e4;
@@ -52,8 +60,9 @@ select{background-color: rgba(181, 238, 253, 0.437);}
   background: #ffdede;
 }
 #calendar .dd {
-  font-size: 1.2em;
-  color: #999;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #000;
 }
 #calendar .evt {
   margin-top: 5px;
@@ -61,6 +70,8 @@ select{background-color: rgba(181, 238, 253, 0.437);}
   font-weight: bold;
   overflow: hidden;
   color: #ff5d5d;
+  border-radius: 10%;
+  margin: auto;
 }
 
 /* (E) ADD/EDIT EVENT */
@@ -99,6 +110,8 @@ select{background-color: rgba(181, 238, 253, 0.437);}
 /*(F) Footer*/
 #footer{
   font-family: 'Courier New', Courier, monospace;
+  margin: auto;
+  text-align:center;
   width: 100%;
   color:whitesmoke;
   background-color: black;
