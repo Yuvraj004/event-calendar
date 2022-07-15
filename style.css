@@ -3,10 +3,12 @@ body{display: flex;flex-direction: column;justify-content: center;align-items: c
 background-image: url("cal.jpg"); background-size: 100% 100%;background-repeat: no-repeat;background-position: center;}
 #cal-wrap * { font-family: arial, sans-serif;}
 .ninja { display: none !important; }
-#heading{
-  font-family: 'Courier New', Courier, monospace;font-size: x-large;color: rgb(0, 110, 255);text-shadow:3px 3px #000;font-size: xx-large;
+.container{
+  font-family: 'Courier New', Courier, monospace;color: rgb(0, 110, 255);text-shadow:3px 3px #000;font-size: xx-large;
   width: 100%;
-  text-align: center;
+  position: relative;
+  bottom: 15px;
+  opacity: 0.5;
 }
 
 /* (B) CONTAINER */
