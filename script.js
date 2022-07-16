@@ -61,22 +61,8 @@ var cal = {
     // Note - Sun is 0 & Sat is 6
     cal.sMth = parseInt(cal.hMth.value); // selected month
     console.log(cal.sMth);
-    if(cal.sMth==1 || cal.sMth==2) {
-      document.body.style.background = " url('spring.jpg') no-repeat";
-      document.body.style.backgroundSize = "100% 90%";
-    };
-    if(cal.sMth==0 || cal.sMth==11 ||cal.sMth==10||cal.sMth==9) {
-      document.body.style.background = " url('winter.jpg') no-repeat";
-      document.body.style.backgroundSize = "100% 90%";
-    };
-    if(cal.sMth==3 || cal.sMth==4 ||cal.sMth==5||cal.sMth==6) {
-      document.body.style.background = " url('summer.jpg') no-repeat";
-      document.body.style.backgroundSize = "100% 90%";
-    };
-    if(cal.sMth==7 || cal.sMth==8) {
-      document.body.style.background = " url('autumn.jpg') no-repeat";
-      document.body.style.backgroundSize = "100% 90%";
-    };
+    cal.img(cal.sMth);
+    
     cal.sYear = parseInt(cal.hYear.value); // selected year
     let daysInMth = new Date(cal.sYear, cal.sMth+1, 0).getDate(), // number of days in selected month
         startDay = new Date(cal.sYear, cal.sMth, 1).getDay(), // first day of the month
@@ -159,7 +145,6 @@ var cal = {
         cRow.classList.add("day");
       }
     }
-
     // (C5) REMOVE ANY PREVIOUS ADD/EDIT EVENT DOCKET
     cal.close();
   },
@@ -199,7 +184,24 @@ var cal = {
     cal.list();
   }},
   
-  
+  img : (mth) => {
+    if( mth==1 || mth==2 ) {
+      document.body.style.background = " url('spring.jpg') no-repeat center";
+      document.body.style.backgroundSize = "100% 100%";
+    };
+    if(mth==11 || mth==0 || mth==10 || mth==9) {
+      document.body.style.background = " url('winter.jpg') no-repeat center";
+      document.body.style.backgroundSize = "100% 100%";
+    };
+    if(mth==3 || mth==4 || mth==5 || mth==6 ) {
+      document.body.style.background = " url('summer.jpg') no-repeat center";
+      document.body.style.backgroundSize = "100% 100%";
+    };
+    if( mth==7 || mth==8 ) {
+      document.body.style.background = " url('autumn.jpg') no-repeat center ";
+      document.body.style.backgroundSize = "100% 100%";
+    };
+  }
   
   
   
