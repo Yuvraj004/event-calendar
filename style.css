@@ -7,7 +7,7 @@ nav{
 .ninja { display: none !important; }
 
 /* (B) CONTAINER */
-#cal-wrap { max-width: 600px; margin: auto;margin-bottom: 20px;}
+#cal-wrap { max-width: 600px; margin: auto;}
 
 /* (C) PERIOD SELECTOR */
 #cal-date { display: flex;margin: 10px 10px;justify-content: center;}
