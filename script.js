@@ -187,19 +187,19 @@ var cal = {
   img : (mth) => {
     if( mth==1 || mth==2 ) {
       document.body.style.background = " url('spring.jpg') no-repeat center";
-      document.body.style.backgroundSize = "100% 100%";
+      document.body.style.backgroundSize = "cover";
     };
     if(mth==11 || mth==0 || mth==10 || mth==9) {
       document.body.style.background = " url('winter.jpg') no-repeat center";
-      document.body.style.backgroundSize = "100% 100%";
+      document.body.style.backgroundSize = "cover";
     };
     if(mth==3 || mth==4 || mth==5 || mth==6 ) {
-      document.body.style.background = " url('summer.jpg') no-repeat center";
-      document.body.style.backgroundSize = "100% 100%";
+      document.body.style.background = " url('summer.jpg') no-repeat";
+      document.body.style.backgroundSize = "cover";
     };
     if( mth==7 || mth==8 ) {
       document.body.style.background = " url('autumn.jpg') no-repeat center ";
-      document.body.style.backgroundSize = "100% 100%";
+      document.body.style.backgroundSize = "cover";
     };
   }
   

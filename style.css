@@ -7,7 +7,7 @@ nav{
 .ninja { display: none !important; }
 
 /* (B) CONTAINER */
-#cal-wrap { max-width: 600px; margin: auto;}
+#cal-wrap { max-width: 500px; margin: auto;}
 
 /* (C) PERIOD SELECTOR */
 #cal-date { display: flex;margin: 10px 10px;justify-content: center;}
@@ -105,7 +105,7 @@ select{background-color: rgba(141, 230, 255, 0.876);box-shadow: 5px 5px #000;}
   color: #fff;
 }
 /*(F) Footer*/
-#footer{
+/* #footer{
   font-family: 'Courier New', Courier, monospace;
   text-align:center;
   width: 100%;
@@ -113,4 +113,25 @@ select{background-color: rgba(141, 230, 255, 0.876);box-shadow: 5px 5px #000;}
   opacity: 0.7;
   position:relative;
   bottom: -5px;
+} */
+/* Responsiveness */
+@media only screen and (max-width:1400px){
+  #cal-container{
+    width: 300px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width:1000px){
+  body{
+    background-size: 50% 50%;
+  }
+  #cal-container{
+    width: 200px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width:700px){
+  #cal-container{
+    width: 300px;
+  }
 }
